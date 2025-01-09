@@ -1,46 +1,13 @@
-<!DOCTYPE html>
-<html lang="sw">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Inno Sports Updates</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      background-color: #f4f4f4;
-      color: #333;
-      margin: 0;
-      padding: 0;
-    }
-    header {
-      background-color: #007bff;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-    }
-    section {
-      padding: 1rem;
-    }
-    footer {
-      background-color: #333;
-      color: white;
-      text-align: center;
-      padding: 1rem;
-    }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Karibu Inno Sports Updates</h1>
-    <p>Updates za Mechi, Ratiba, na Matokeo</p>
-  </header>
-  <section>
-    <h2>Habari za Hivi Karibuni</h2>
-    <p>Timu ya Simba SC imeshinda mechi yao ya mwisho dhidi ya Azam FC...</p>
-    <p>Ratiba ya EPL wiki hii: Arsenal vs Man City, Man United vs Chelsea...</p>
-  </section>
-  <footer>
-    <p>&copy; 2025 Inno Sports Updates. Haki zote zimehifadhiwa.</p>
-  </footer>
-</body>
-</html>
+document.addEventListener("DOMContentLoaded", function() {
+    const liveUpdates = document.getElementById("live-updates");
+
+    // Simulate live score updates every minute
+    let score = 0;
+    setInterval(function() {
+        score++;
+        liveUpdates.innerHTML = `
+            <p><strong>Score:</strong> ${score} - ${score}</p>
+            <p><strong>Time:</strong> ${score}:00</p>
+        `;
+    }, 60000);  // Update every 1 minute
+});
